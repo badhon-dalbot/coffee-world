@@ -1,10 +1,9 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 .container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
 .header-1 {
     width: 100%;
@@ -68,6 +67,7 @@ body {
 .header {
     width: 100%;
     background-color: #DF5E5E;
+    display: flex;
 
 }
 .header::after {
@@ -79,7 +79,6 @@ body {
 .logo {
     width: 30%;
     text-align: center;
-    float: left;
 }
 .logo img {
     width: 30%;
@@ -89,7 +88,6 @@ body {
 .menu {
     width: 70%;
     text-align: center;
-    float: right;
 }
 .menu ul {
     list-style: none;
@@ -208,45 +206,32 @@ body {
 .images {
     width: 100%;
     min-height: 600px;
+    display: flex;
+    flex-flow: nowrap;
 }
-.images img {
-    width: 400px;
-}
-.img-box-1 {
-    width: 30%;
+.img-box {
+    width: 33%;
     height: 300px;
-    float: left;
     overflow: hidden;
 }
- .img-box-2 {
-     width: 30%;
-     height: 300px;
-     float: left;
-     overflow: hidden;
-     margin-left: 5%;
-     margin-right: 5%;
- }
- .img-box-3 {
-    width: 30%;
-    height: 300px;
-    float: right;
-    overflow: hidden;
-
- }
- 
+.img-box img {
+    width: 100%;
+}
 
 /* footer */
-.footer {
+footer {
     width: 100%;
     min-height: 300px;
     background-color: #003638;
+}
+.footer-up {
+    display: flex;
 }
 /* footer-left */
 .footer-left {
     width: 30%;
     height: 300px;
     overflow: hidden;
-    float: left;
     margin-left: 2%;
 }
 .box-1 {
@@ -277,7 +262,6 @@ body {
 .footer-middle {
     width: 30%;
     height: 300px;
-    float: left;
     margin: 10px 3%;
     overflow: hidden;
 }
@@ -296,7 +280,6 @@ body {
 .footer-right {
     width: 30%;
     height: 300px;
-    float: right;
     margin-right: 2%;
     overflow: hidden;
 }
@@ -352,7 +335,11 @@ body {
 }
 .footer-bottom hr {
     width: 80%;
+    margin: auto;
 } 
+.footer-bottom p {
+    padding: 10px 0;
+}
 .footer-bottom a {
     text-decoration: none;
     color: #53B8BB;
